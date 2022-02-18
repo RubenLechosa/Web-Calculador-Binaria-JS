@@ -1,0 +1,84 @@
+#cv {
+  text-align: center;
+  color: white;
+}
+
+#fotomedio{
+  text-align: center;
+  color: white;
+}
+
+.sobre_mi{
+  margin-top: 1%;
+}
+
+body {
+  font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  height: 200vh;
+  position: relative;
+  background-color: #121212;
+}
+
+body.offcanvas-menu:before {
+  opacity: 1;
+  z-index: 1002;
+  visibility: visible;
+}
+
+p {
+  color: #b3b3b3;
+  font-weight: 300;
+}
+
+a,
+a:hover {
+  text-decoration: none !important;
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.site-navbar-wrap {
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+  left: 0;
+}
+
+.site-navbar-wrap a {
+  color: #fff;
+}
+
+.site-navbar-wrap .site-navbar-top {
+  font-size: 0.8rem;
+}
+
+.site-navbar-top, .sobre_mi {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.site-navbar .site-navigation .site-menu>li {
+  display: inline-block;
+  padding: 10px 5px;
+}
+
+.site-navbar .site-navigation .site-menu>li>a:hover {
+  color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
