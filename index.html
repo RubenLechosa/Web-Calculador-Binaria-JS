@@ -15,10 +15,10 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <!-- Style -->
   <link rel="stylesheet" href="css/style.css">
-
+  <script type="text/javascript" src="main.js"></script> 
 </head>
 
-<body>
+<body id="ola">
   <!--Nav-->
   <div class="site-navbar-wrap">
     <div class="site-navbar-top">
@@ -61,10 +61,8 @@
               <div class="container">
                 <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#"
                     class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
-
                 <ul class="site-menu main-menu js-clone-nav d-none d-lg-block">
-
-                  <li><a href="#about-section" class="nav-link">Sobre mí</a></li>
+                  <li><a href="#sobre_mi" class="nav-link">Sobre mí</a></li>
                   <li><a href="#contact-section" class="nav-link">Contacto</a></li>
                   <li><a href="convers.html" class="nav-link">Operaciones MP</a></li>
                 </ul>
@@ -83,14 +81,15 @@
     </div>
     <div id="cv">
       <h1>Ruben Lechosa Cervantes</h1>
-      <a href="cv.pdf" download="cv">
-        <button type="button" style="background-color: blue; color: aliceblue;" class="btn rounded-pill">Descargar
+      <a target="_BLANK" href="cv.pdf" download="cv">
+        <button type="button" style="background-color: blue; color: aliceblue; margin-top: 1%;"
+          class="btn rounded-pill">Descargar
           CV</button>
       </a>
     </div>
     <!--Fin boton-->
-
-    <div class="sobre_mi">
+<hr style="margin-top: 4%;">
+    <div id = "sobre_mi">
     </div>
     <div>
       <h1 style="margin-top: 1%;">Sobre Mí</h1>
@@ -116,22 +115,51 @@
             </div>
           </div>
         </div>
-        
+<hr style="margin-bottom: 5%;">
       </div>
     </div>
+    <div id="contact-section">
+      <h1 style="color: #fff;">Contacto</h1>
 
-    
+      <div class="container-fluid px-1 py-5 mx-auto">
+        <div class=" d-flex justify-content-center">
+          <div class="col-xl-7 col-lg-8 col-md-9 col-11">
+            <div class="">
+              <form class="">
+
+                <div class="mb-3">
+                  <label class="form-label" for="name">Nombre</label>
+                  <input class="form-control" id="name" type="text" placeholder="Nombre" />
+                </div>
+
+                <!-- Email address input -->
+                <div class="mb-3">
+                  <label style="text-align: left;" class="form-label" for="emailAddress">Email</label>
+                  <input class="form-control" id="emailAddress" type="email" placeholder="nombre@ejemplo.com" />
+                </div>
+
+                <!-- Message input -->
+                <div class="mb-3">
+                  <label style="text-align: left;" class="form-label" for="message">Mensaje</label>
+                  <textarea class="form-control" id="message" type="text" placeholder="Mensaje"
+                    style="height: 10rem;"></textarea>
+                </div>
+
+                <!-- Form submit button -->
+                <div class="">
+                  <button class="btn btn-primary btn-lg" type="submit">Enviar</button>
+                </div>
+            </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-
-
-
-
-
-
-
-
-
-
+  
+  </div>
+  <a onclick="topFunction()" id="myBtn" href="#"><img src="images/pene.png" width="40px"></a>
+  
 </body>
 
 </html>
